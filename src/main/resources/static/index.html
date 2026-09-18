@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Library Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Library Management System</h1>
+
+    <!-- Add Library -->
+    <div class="form-container">
+
+        <h2>Add Library</h2>
+
+        <input
+                type="text"
+                id="name"
+                placeholder="Enter Library Name">
+
+        <input
+                type="text"
+                id="location"
+                placeholder="Enter Location">
+
+        <input
+                type="text"
+                id="phoneNumber"
+                placeholder="Enter Phone Number">
+
+        <input
+                type="text"
+                id="journals"
+                placeholder="Enter Journals">
+
+        <button onclick="addLibrary()">
+            Add Library
+        </button>
+
+    </div>
+
+
+    <!-- Library List -->
+    <div class="library-container">
+
+        <h2>Library List</h2>
+
+        <table>
+
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Phone Number</th>
+                <th>Journals</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+
+            <tbody id="libraryTableBody">
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+/* ===============================
+   GENERAL
+================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+
+/* ===============================
+   MAIN CONTAINER
+================================ */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 40px auto;
+}
+
+
+/* ===============================
+   HEADING
+================================ */
+
+h1 {
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: #2c3e50;
+}
+
+h2 {
+    margin-bottom: 20px;
+
+    color: #34495e;
+}
+
+
+/* ===============================
+   FORM CONTAINER
+================================ */
+
+.form-container {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    margin-bottom: 35px;
+}
+
+
+/* ===============================
+   INPUT FIELDS
+================================ */
+
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #3498db;
+}
+
+
+/* ===============================
+   BUTTON
+================================ */
+
+button {
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #3498db;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    margin-right: 8px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+/* ===============================
+   LIBRARY TABLE CONTAINER
+================================ */
+
+.library-container {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ===============================
+   TABLE
+================================ */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+}
+
+
+/* ===============================
+   TABLE HEADER
+================================ */
+
+thead {
+    background-color: #34495e;
+
+    color: white;
+}
+
+th {
+    padding: 14px;
+
+    text-align: center;
+
+    font-size: 15px;
+}
+
+
+/* ===============================
+   TABLE DATA
+================================ */
+
+td {
+    padding: 12px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* ===============================
+   TABLE ROW
+================================ */
+
+tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+
+/* ===============================
+   UPDATE BUTTON
+================================ */
+
+td button:first-child {
+    background-color: #f39c12;
+}
+
+td button:first-child:hover {
+    background-color: #d68910;
+}
+
+
+/* ===============================
+   DELETE BUTTON
+================================ */
+
+td button:last-child {
+    background-color: #e74c3c;
+}
+
+td button:last-child:hover {
+    background-color: #c0392b;
+}
+
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .library-container {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 700px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+}
